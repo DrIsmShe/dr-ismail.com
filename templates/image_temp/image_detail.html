@@ -1,0 +1,515 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% load static %}
+{% load movie_tag %}
+
+
+{% block title %}{{ title }}{% endblock %}
+{% block description %}{{ MetaDescription }}{% endblock description %}
+{% block keywords %}{{ MetaKeyWords }}{% endblock keywords %}
+
+
+{% block content %}
+
+    <link href="{% static 'frontend/imagegallery/css/reset.css' %}" rel="stylesheet">
+    <link href="{% static 'frontend/imagegallery/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="{% static 'frontend/imagegallery/css/style.css' %}" rel="stylesheet">
+
+
+    <div class="uni-our-doctor">
+        <div id="wrapper-container" class="site-wrapper-container">
+
+            <div id="main-content" class="site-main-content">
+                <section class="site-content-area">
+                    <div class="uni-our-doctor-body">
+                        <div class="container-fluid">
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+
+
+                                    {% if  image.Image1.url   ==  None %}
+
+                                    {% else %}
+
+
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image1.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image1.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image2.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image2.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image2.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image3.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image3.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image3.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image4.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image4.url }}" data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image4.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image5.url   ==  None %}
+
+                                    {% else %}
+
+
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image5.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image5.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image6.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image6.url }}" data-lightbox="
+                                               roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image6.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image7.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image7.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image7.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image8.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image8.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image8.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image9.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image9.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image9.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image10.url   ==  None %}
+
+                                    {% else %}
+
+
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image10.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image10.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image11.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image11.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image11.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image12.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image12.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image12.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image13.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image13.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image13.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image14.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image14.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image14.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image15.url   ==  None %}
+
+                                    {% else %}
+
+
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image15.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image15.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image16.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image16.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image16.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image17.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image17.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image17.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image18.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image18.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image18.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image19.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image19.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image19.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image20.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image20.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image20.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image21.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image21.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image21.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image22.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image22.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image22.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image23.url   ==  None %}
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image23.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image23.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div id="gallery">
+                                    {% if  image.Image24.url   ==  None %}
+                                        <img src="{% static 'default.png' %}" alt="" class="img-responsive">
+
+                                    {% else %}
+                                        <div class="uni-our-doctor-item-default">
+                                            <div class="item-img">
+                                                <a href="{{ image.Image241.url }}"
+                                                   data-lightbox="roadtrip"
+                                                   data-title="{{ image.title }}" target="_blank"><img
+                                                        src="{{ image.Image241.url }}"
+                                                        alt=""
+                                                        class="img-responsive"></a>
+                                            </div>
+
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="container">
+                                    <p>{{ image.description|safe }}</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="page-title">
+        <div class="page-title-inner">
+            <h1>{% trans 'Photos and videos of Rhinoplasty are presented here, you can see photos and videos from operations, you can see the results of blepharoplasty' %}</h1>
+        </div>
+    </div>
+    <script src="{% static 'frontend/imagegallery/lightbox/js/lightbox-plus-jquery.min.js' %}"></script>
+{% endblock %}
+

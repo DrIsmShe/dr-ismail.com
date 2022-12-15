@@ -1,0 +1,68 @@
+{% load static %}
+{% load static i18n %}
+{% load movie_tag %}
+
+<nav id="site-navigation" class="main-navigation">
+                <button class="menu-toggle">Menu</button>
+                <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+                <div class="menu-menu-1-container">
+                    <ul id="menu-menu-1" class="menu">
+                        <li class="has-sub1"><a href="{% url 'home' %}">Home</a></li>
+                        {% get_categories_ourservices as  category_ourservices %}
+                        {% for item in category_ourservices %}
+                            <li><a href="{{ item.get_absolute_url }}">{{ item.name }}</a></li>
+                        {% endfor %}
+
+                        <li class="has-sub"><a href="">{% trans 'Information' %}</a>
+                            <ul>
+                                {% get_categories as categories %}
+                                {% for item in categories %}
+                                    <li><a href="{{ item.get_absolute_url }}">{{ item.name }}</a></li>
+                                {% endfor %}
+
+
+                            </ul>
+                        </li>
+                        <li class="has-sub"><a href="">{% trans 'Video' %}</a>
+                            <ul>
+                                {% get_video_categories as categories %}
+                                {% for item in categories %}
+                                    <li><a href="{{ item.get_absolute_url }}">{{ item.name }}</a></li>
+                                {% endfor %}
+
+
+                            </ul>
+                        </li>
+                        <li class="has-sub"><a href="">{% trans 'Gallery' %}</a>
+                            <ul>
+                                {% get_categories_image as categories %}
+                                {% for item in categories %}
+
+                                    <li><a href="{{ item.get_absolute_url }}">{{ item.title }}</a>
+                                    </li>
+                                {% endfor %}
+
+
+                            </ul>
+                        </li>
+                        <li class="has-sub"><a href="">{% trans 'About us' %}</a>
+                            <ul>
+
+
+                                {% get_categories_about_doctor as cataboutdoctor %}
+                                {% for item in cataboutdoctor %}
+                                    <li><a href="{{ item.get_absolute_url }}">{{ item.name }}</a>
+                                {% endfor %}
+
+                                <li><a href="{% url 'contact' %}">Our contacts</a></li>
+                                <li class="uni-btn-appointment">
+                                    <a href="{% url 'faq' %}">FAQ</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+

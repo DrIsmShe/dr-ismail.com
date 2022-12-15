@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% load static %}
+{% load movie_tag %}
+{% block title %}{{ name }}{% endblock %}
+{% block description %}{{ MetaDescriptions }}{% endblock description %}
+{% block keywords %}{{ MetaKeyWords }}{% endblock keywords %}
+
+
+
+{% block content %}
+    <div class="uni-blog-list">
+        <div id="wrapper-container" class="site-wrapper-container">
+            <div id="main-content" class="site-main-content">
+                <section class="site-content-area">
+                    {#                    {% include 'includes/breadcrump_post.html' %}#}
+
+                    <div class="uni-blog-list-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="uni-blog-list-left">
+
+                                        {% for item in about_doctor_category %}
+
+                                            <!--===========================================-->
+                                            <div class="blog-list-item">
+                                                <article class="post type-post">
+                                                    <div class="content-inner">
+                                                        <div class="uni-entry-top">
+                                                            <div class="thumbnail-img">
+                                                                    <img src="{{ item.image.url }}" alt="" title="{{ item.title }}"
+                                                                         class="img-responsive"
+                                                                         style="width: 100%; height: 450px">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="uni-entry-body">
+                                                            <div class="uni-entry-time">
+                                                                <ul>
+                                                                    <li class="year">{{ item.is_published|date:'Y' }}</li>
+                                                                    <li class="day">{{ item.is_published|date:'d' }}</li>
+                                                                    <li class="month">{{ item.is_published|date:'M' }}</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="uni-entry-content">
+                                                                <span class="uni-author">
+                                                            <a href="#" rel="author"><i class="fa fa-list-alt"
+                                                                                        aria-hidden="true"></i> {{ item.category.name }}</a>
+                                                                  </span>
+                                                                &nbsp&nbsp
+                                                                <span class="uni-author">
+                                                            <a href="#" rel="author"><i class="fa fa-user"
+                                                                                        aria-hidden="true"></i> Dr. İsmayıl İ.</a>
+                                                         </span>
+                                                                <header class="uni-entry-header">
+                                                                    <h2 class="uni-entry-title">
+                                                                        <a href="{{ item.get_absolute_url }}"
+                                                                           rel="">{{ item.title|safe }}</a>
+                                                                    </h2>
+                                                                </header>
+
+
+                                                                <div class="uni-entry-summary">
+                                                                    <p>{{ item.descriptions|safe }}</p>
+                                                                </div>
+                                                                <div class="readmore">
+                                                                    <a href="{{ item.get_absolute_url }}"><i
+                                                                            class="icomoon icon-up"></i>{% trans 'More details' %}</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                        {% endfor %}
+                                        {% include 'includes/pagination_search.html' %}
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="uni-blog-list-right">
+                                        <aside id="secondary" class="widget-area">
+                                            <aside class="widget">
+                                                <div class="widget-content">
+                                                    <div class="uni-search-sidebar">
+                                                        <form action="{% url 'search' %}"
+                                                              method="get" accept-charset="utf-8">
+                                                            <div class="vk-newlist-banner-test-search">
+                                                                <input type="text" name="q" placeholder="Search...">
+                                                                <button type="submit"><i class="fa fa-search"
+                                                                                         aria-hidden="true"></i>
+                                                                </button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                            <aside class="widget">
+                                                <h3 class="widget-title">{% trans 'categories' %}</h3>
+                                                <div class="uni-divider"></div>
+                                                <div class="widget-content">
+                                                    <div class="uni-widget-category">
+                                                        <ul>
+
+                                                            {% get_categories as category %}
+                                                            {% for item in category %}
+                                                                <li><a href="{{ item.get_absolute_url }}"><i
+                                                                        class="fa fa-angle-right"
+                                                                        aria-hidden="true"></i> {{ item.name|safe }}</a>
+                                                                </li>
+                                                            {% endfor %}
+                                                            {% get_categories_ourservices as categories %}
+                                                            {% for item in categories %}
+                                                                <li>
+                                                                    <a href="{{ item.get_absolute_url }}"><i
+                                                                            class="fa fa-angle-right"
+                                                                            aria-hidden="true"></i>{{ item.name }}
+                                                                    </a>
+                                                                </li>
+                                                            {% endfor %}
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                            <aside class="widget">
+                                                <h3 class="widget-title">{% trans 'Latest posts' %}</h3>
+                                                <div class="uni-divider"></div>
+                                                <div class="widget-content">
+                                                    <div class="uni-widget-popular-posts">
+                                                        <ul>
+                                                            {% get_posts as latest_posts %}
+                                                            {% for item in latest_posts %}
+                                                                <li>
+                                                                    <div class="item-widget-popular-post">
+                                                                        <div class="item-img">
+                                                                            <a href="{{ item.get_absolute_url }}"><img
+                                                                                    src="{{ item.image.url }}"
+                                                                                    alt=""></a>
+                                                                        </div>
+                                                                        <div class="item-caption">
+                                                                            <h4>
+                                                                                <a href="{{ item.get_absolute_url }}">{{ item.title|safe }}</a>
+                                                                            </h4>
+                                                                            <div class="time"><i class="fa fa-calendar"
+                                                                                                 aria-hidden="true"></i>
+                                                                                {{ item.is_published|date:'M d, Y' }}
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            {% endfor %}
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                            <aside class="widget">
+                                                <h3 class="widget-title">{% trans 'tags cloud' %}</h3>
+                                                <div class="uni-divider"></div>
+                                                <div class="widget-content">
+                                                    <div class="uni-widget-tagsclound">
+                                                        <ul>
+                                                            {% get_tagline_posts as tagline_posts %}
+                                                            {% for item in tagline_posts %}
+                                                                <li>
+                                                                    <a href="{{ item.get_absolute_url }}">{{ item.tagline|safe }}</a>
+                                                                </li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+{% endblock %}

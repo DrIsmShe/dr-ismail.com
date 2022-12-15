@@ -1,0 +1,24 @@
+{% load static %}
+{% load static i18n %}
+{% load movie_tag %}
+<div class="uni-banner-default uni-background-1">
+    <div class="container">
+        <!-- Page title -->
+        <div class="page-title">
+            <div class="page-title-inner">
+
+                <h1>{{postcategory}}</h1>
+
+
+            </div>
+        </div>
+        <!-- End page title -->
+
+        <!-- Breadcrumbs -->
+        <ul class="breadcrumbs">
+            <li><a href="{% url 'home' %}">{% trans 'Home'%}</a></li>
+            <li><a href="{% url 'post_detail:category_list' %}">{% trans 'Home'%}</a></li>
+        </ul>
+        <!-- End breadcrumbs -->
+    </div>
+</div>

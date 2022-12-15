@@ -1,0 +1,120 @@
+{% load static %}
+{% load static i18n %}
+{% load movie_tag %}
+<div class="container-fluid">
+
+    <div class="col-md-5">
+        <div class="uni-banner">
+            <div class="uni-owl-one-item owl-carousel owl-theme">
+
+
+                {% for item in our_service_last %}
+
+                    <div class="item">
+                        <div class="uni-banner-img uni-background-6"><img src="{{ item.image.url }}" alt="{{ item.title|truncatechars:50 }}"></div>
+                        <div class="content animated" data-animation="flipInX" data-delay="0.9s">
+                            <div class="container">
+                                <div class="caption">
+                                    <a href="{{ item.get_absolute_url }}">
+                                        <p>{{ item.title|safe }}</p>
+                                    </a>
+                                    <p>
+                                        {{ item.descriptions|truncatechars:60|safe }}
+                                    </p>
+                                    <a href="{{ item.get_absolute_url }}">{% trans '' %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2" style="background-color: rgb(246 247 250); ">
+
+
+        <div class="uni-single-post">
+            <div id="wrapper-container" class="site-wrapper-container">
+
+
+                <div id="main-content" class="site-main-content">
+                    <section class="site-content-area">
+
+                        <div class="uni-single-post-body">
+
+                                <div class="uni-blog-list-right">
+
+
+                                    <aside class="widget">
+                                        <div class="widget-content">
+                                            <div class="uni-widget-popular-posts" style="height: 340px; width: 100%">
+                                                <ul>
+                                                    {% get_posts_banner as latest_posts %}
+                                                    {% for item in latest_posts %}
+                                                        <li>
+                                                            <div class="item-widget-popular-post" style="width: 180px">
+                                                                <div class="item-img" style="height: 90px; width: 90px">
+                                                                    <a href="{{ item.get_absolute_url }}"><img
+                                                                            src="{{ item.image.url }}"
+                                                                            alt="{{ item.title|truncatechars:50 }}"></a>
+                                                                </div>
+                                                                <div class="item-caption"
+                                                                     style="height: 50px; width: 100%">
+                                                                    <h4>
+                                                                        <a href="{{ item.get_absolute_url }}" style="font-size: 12px">{{ item.title|truncatechars:50 }}</a>
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    {% endfor %}
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </aside>
+
+
+                                </div>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-5">
+        <div class="uni-banner">
+            <div class="uni-owl-one-item owl-carousel owl-theme">
+
+                {% for item in posts_for_index_banner %}
+                    <div class="item">
+                        <div class="uni-banner-img uni-background-6"><img src="{{ item.image.url }}" alt="{{ item.title|truncatechars:50 }}"></div>
+                        <div class="content animated" data-animation="flipInX" data-delay="0.9s">
+                            <div class="container">
+                                <div class="caption">
+                                    <a href="{{ item.get_absolute_url }}">
+                                        <p>{{ item.title|safe }}</p>
+                                    </a>
+                                    <p>
+                                        {{ item.descriptions|truncatechars:60|safe }}
+                                    </p>
+                                    <a href="{{ item.get_absolute_url }}">{% trans '' %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

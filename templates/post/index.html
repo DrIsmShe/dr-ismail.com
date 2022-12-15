@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load movie_tag %}
+{% load static %}
+{% load static i18n %}
+{% block title %}{% trans 'ENT doctor, otorhinolaryngologist Dr. Ismayil Ismayilov' %}{% endblock %}
+{% block description %}
+    {% trans 'Website of ENT doctor, otorhinolaryngologist Dr. Ismayil Ismayilov. Information about ear, nose and throat diseases.' %}{% endblock description %}
+{% block keywords %}
+    {% trans 'ENT doctor otorhinolaryngologist Dr. Ismayil Ismayilov ear, nose and throat diseases' %}{% endblock keywords %}
+{% block content %}
+    <div class="container">
+
+        <div id="main-content" class="site-main-content">
+            <section class="site-content-area">
+                <div id="content" class="site-content">
+                    <div id="primary" class="content-area column full">
+                        <main id="main" class="site-main" >
+                            <div class="grid portfoliogrid" >
+                                {% for item in posts_for_index %}
+                                    <article class="hentry" style="height: 80px; overflow: hidden;">
+
+                                        <header class="entry-header" >
+                                            {#                                        <div class="entry-thumbnail">#}
+                                            {#                                            <a href="{{ item.get_absolute_url }}"><img#}
+                                            {#                                                    src="{{ item.image.url }}"#}
+                                            {#                                                    alt="{{ item.title|safe }}" style="height: 100px; width: 100px"/></a>#}
+                                            {#                                        </div>#}
+                                            <h2 class="entry-title" ><a href="{{ item.get_absolute_url }}"
+                                                                       rel="bookmark">{{ item.title|safe|truncatechars:70 }}</a>
+                                            </h2>
+
+                                            <div class="entry-meta">
+                                    <span class="posted-on">
+                                        <time class="entry-date published">
+
+                                         Published: {{ item.is_published|date:'Y' }} - {{ item.is_published|date:'d' }} - {{ item.is_published|date:'M' }}
+
+                                        </time>
+                                    </span>
+                                                |
+
+                                                <span class="posted-on">
+                                        Category: <a href="{{ item.category.get_absolute_url }}">{{ item.category.name }}</a>
+                                    </span>
+                                            </div>
+
+
+                                        </header>
+
+                                    </article>
+
+                                {% endfor %}
+                            </div>
+
+                            <br/>
+
+
+                        </main>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+            <section class="site-content-area">
+            <h3 style="text-align: center">Our services</h3>
+                <div id="content" class="site-content">
+                    <div id="primary" class="content-area column full">
+                        <main id="main" class="site-main">
+                            <div class="grid portfoliogrid">
+                                {% for item in our_service_last %}
+                                    <article class="hentry" style="height: 80px; overflow: hidden">
+
+                                        <header class="entry-header">
+                                            {#                                        <div class="entry-thumbnail">#}
+                                            {#                                            <a href="{{ item.get_absolute_url }}"><img#}
+                                            {#                                                    src="{{ item.image.url }}"#}
+                                            {#                                                    alt="{{ item.title|safe }}" style="height: 100px; width: 100px"/></a>#}
+                                            {#                                        </div>#}
+                                            <h2 class="entry-title"><a href="{{ item.get_absolute_url }}"
+                                                                       rel="bookmark">{{ item.title|safe|truncatechars:70 }}</a>
+                                            </h2>
+
+                                            <div class="entry-meta">
+                                    <span class="posted-on">
+                                        <time class="entry-date published">
+
+                                         Published: {{ item.is_published|date:'Y' }} - {{ item.is_published|date:'d' }} - {{ item.is_published|date:'M' }}
+
+                                        </time>
+                                    </span>
+                                                |
+
+                                                <span class="posted-on">
+                                        Category: <a href="{{ item.category.get_absolute_url }}">{{ item.category.name }}</a>
+                                    </span>
+                                            </div>
+
+
+                                        </header>
+
+                                    </article>
+
+                                {% endfor %}
+                            </div>
+
+                            <br/>
+
+
+                        </main>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+        </div>
+    </div>
+{% endblock %}

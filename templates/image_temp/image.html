@@ -1,0 +1,345 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% load static %}
+{% load movie_tag %}
+{% block title %}{{ title }}{% endblock %}
+{% block description %}{{ MetaDescriptions }}{% endblock description %}
+{% block keywords %}{{ MetaKeyWords }}{% endblock keywords %}
+
+
+{% block content %}
+    <div class="load-page">
+        <div class="sk-wave">
+            <div class="sk-rect sk-rect1"></div>
+            <div class="sk-rect sk-rect2"></div>
+            <div class="sk-rect sk-rect3"></div>
+            <div class="sk-rect sk-rect4"></div>
+            <div class="sk-rect sk-rect5"></div>
+        </div>
+    </div>
+
+    <main>
+        <div id="main-content" class="site-main-content">
+            <section class="site-content-area">
+                <div class="uni-banner-default uni-background-1">
+                    <div class="container">
+                        <!-- Page title -->
+                        <div class="page-title">
+                            <div class="page-title-inner">
+                                <h1><h1 class="fw-light"><a
+                                        href="{% url 'image-category' category.slug %}">{{ category.title }}</a></h1>
+                                </h1>
+                            </div>
+                        </div>
+                        <!-- End page title -->
+
+                        <!-- Breadcrumbs -->
+                        <ul class="breadcrumbs">
+                            <li><a href="{% url 'home' %}">{% trans 'Home'%}</a></li>
+                            <li><a href="{% url 'image-category' category.slug %}">{{ category.title|safe }}</a></li>
+                            <li><a href="#">{{ image.title|safe }}</a></li>
+                        </ul>
+                        <!-- End breadcrumbs -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image1.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image1.url }}" alt="">
+                                {% endif %}
+                            </div>
+                            <br>
+
+                            <div class="col-lg-12">
+                                {% if  image.Image3.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image3.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image2.url   == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image2.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image4.url  == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image4.url }}" alt="">
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image5.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image5.url }}" alt="">
+                                {% endif %}
+                            </div>
+                            <br>
+
+                            <div class="col-lg-12">
+                                {% if  image.Image7.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image7.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image6.url   == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image6.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image8.url  == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image8.url }}" alt="">
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image9.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image9.url }}" alt="">
+                                {% endif %}
+                            </div>
+                            <br>
+
+                            <div class="col-lg-10">
+                                {% if  image.Image11.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image11.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image10.url   == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image10.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image12.url  == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image12.url }}" alt="">
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image13.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image13.url }}" alt="">
+                                {% endif %}
+                            </div>
+                            <br>
+
+                            <div class="col-lg-10">
+                                {% if  image.Image15.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image15.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image14.url   == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image14.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image16.url  == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image16.url }}" alt="">
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image17.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image17.url }}" alt="">
+                                {% endif %}
+                            </div>
+                            <br>
+
+                            <div class="col-lg-10">
+                                {% if  image.Image19.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image19.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image18.url   == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image18.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image20.url  == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image20.url }}" alt="">
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image21.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image21.url }}" alt="">
+                                {% endif %}
+                            </div>
+                            <br>
+
+                            <div class="col-lg-10">
+                                {% if  image.Image23.url   ==  None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image23.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image22.url   == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image22.url }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% if  image.Image24.url  == None %}
+
+                                {% else %}
+                                    <img class="img-fluid" src="{{ image.Image24.url }}" alt="">
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <p>{{ image.description }}</p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+{% endblock %}
+

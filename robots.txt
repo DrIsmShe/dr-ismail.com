@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+
+Disallow: /
+Host: dr-ismail.com
+Sitemap: https://dr-ismail.com/sitemap.xml
+

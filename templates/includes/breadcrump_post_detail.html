@@ -1,0 +1,22 @@
+{% load static %}
+{% load static i18n %}
+{% load movie_tag %}
+<div class="uni-banner-default uni-background-1">
+    <div class="container">
+        <!-- Page title -->
+        <div class="page-title">
+            <div class="page-title-inner">
+                <h1>{{ category_item.name }}</h1>
+            </div>
+        </div>
+        <!-- End page title -->
+
+        <!-- Breadcrumbs -->
+        <ul class="breadcrumbs">
+            <li><a href="{% url 'home' %}">{% trans 'Home' %}</a></li>
+            <li><a href="{{ category_item.get_absolute_url }}">{{ category_item.name|safe }}</a></li>
+            <li>{{ PostDetail.title|safe }}</li>
+        </ul>
+        <!-- End breadcrumbs -->
+    </div>
+</div>

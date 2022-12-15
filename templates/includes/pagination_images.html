@@ -1,0 +1,33 @@
+<!--Pagination blog-->
+<div class="uni-divider"></div>
+{#{% for contact in page_obj %}#}
+    {# Each "contact" is a Contact model object. #}
+{#    {{ contact.full_name|upper }}<br>#}
+{##}
+{#{% endfor %}#}
+
+
+
+<button type="button" class="btn btn-lg btn-block">
+    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+</button>
+<div class="uni-pagination-blog">
+    <ul>
+        {% if page_obj.has_previous %}
+            <li class="older-post"><a href="?page=1">&laquo; first</a></li>
+            <li class="older-post"><a
+                    href="?page={{ page_obj.previous_page_number }}">previous</a>
+            </li>
+        {% endif %}
+
+
+        {% if page_obj.has_next %}
+            <li class="newer-post"><a
+                    href="?page={{ page_obj.paginator.num_pages }}">last
+                &raquo;</a></li>
+            <li class="newer-post"><a
+                    href="?page={{ page_obj.next_page_number }}">next</a></li>
+
+        {% endif %}
+    </ul>
+</div>

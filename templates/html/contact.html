@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% load static %}
+{% load movie_tag %}
+{% block title %}{{ title }}{% endblock %}
+{% block description %}{{ MetaDescriptions }}{% endblock description %}
+{% block keywords %}{{ MetaKeyWords }}{% endblock keywords %}
+
+
+
+{% block content %}
+    <div class="uni-single-post">
+        <div id="wrapper-container" class="site-wrapper-container">
+
+
+            <div id="main-content" class="site-main-content">
+                <section class="site-content-area">
+
+
+                    <div class="uni-single-post-body" style="padding-left: 1px">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="page-title-inner">
+                                        <h1>{% trans 'Our contacts' %}</h1>
+                                    </div>
+                                    <div class="uni-single-post-left">
+                                        <div class="uni-entry-top">
+                                            <div class="post-formats-wrapper">
+                                                <div class="uni-about-map">
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.92309786775!2d49.860063615142856!3d40.410554379365855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d56ad355fdd%3A0x278e2f3861d60c59!2sMilana%20Hospital%20Klinikas%C4%B1!5e0!3m2!1sru!2s!4v1663450175177!5m2!1sru!2s"
+                                                            width="100%" height="450" style="border:0;"
+                                                            allowfullscreen="" loading="lazy"
+                                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="page-content">
+                                            <div class="uni-contact-us-body-content">
+                                                <div class="container">
+
+
+                                                    <div class="uni-contact-info">
+                                                        <div class="uni-contact-title">
+                                                            <h3>{% trans 'Our contacts' %}</h3>
+                                                            <div class="uni-line"></div>
+                                                        </div>
+                                                        <div class="uni-contact-info-body">
+                                                            <div class="item">
+                                                                <div class="icon-holder">
+                                                                    <i class="fa fa-map-marker"
+                                                                       aria-hidden="true"></i>
+                                                                </div>
+                                                                <div class="text-holder">
+                                                                    <p>Milan hospital</p>
+                                                                    <p>Əhməd Rəcəbli küçəsi 1/21</p>
+                                                                    <span>Bakı</span>
+                                                                    <span>Azərbaycan</span>
+                                                                </div>
+                                                                <div class="icon-holder">
+                                                                    <span>+994 (50) 4294858</span>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="uni-contact-us-hours">
+                                                        <div class="uni-contact-us-title">
+
+                                                            <h4>{% trans 'opening hours' %}</h4>
+                                                        </div>
+                                                        <div class="uni-contact-us-hours-content">
+                                                            <table class="table">
+                                                                <tr>
+                                                                    <td>{% trans 'monday' %} </td>
+                                                                    <td>8:00 - 17:00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{% trans 'tuesday' %} </td>
+                                                                    <td>8:00 - 17:00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{% trans 'wednesday' %} </td>
+                                                                    <td>8:00 - 17:00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{% trans 'thursday' %} </td>
+                                                                    <td>8:00 - 17:00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{% trans 'friday' %} </td>
+                                                                    <td>8:00 - 17:00</td>
+                                                                </tr>
+
+                                                            </table>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

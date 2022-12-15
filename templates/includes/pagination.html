@@ -1,0 +1,14 @@
+
+<nav class="pagination">
+    {% if page_obj.has_previous %}
+        <a class="next page-numbers" href="?{{ q }}&page=1">&laquo; first »</a>
+        <a class="next page-numbers" href="?page={{ page_obj.previous_page_number }}">previous »</a>
+    {% endif %}
+    <button type="button" class="btn btn-lg btn-block">
+        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+    </button>
+    {% if page_obj.has_next %}
+        <a class="next page-numbers" href="?page={{ page_obj.paginator.num_pages }}">last»</a>
+        <a class="next page-numbers"  href="?page={{ page_obj.next_page_number }}">next</a>
+    {% endif %}
+</nav>

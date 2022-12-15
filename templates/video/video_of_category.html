@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load static i18n %}
+{% load movie_tag %}
+{% load embed_video_tags %}
+{% block title %}
+
+    {% trans 'Videos related to ear, nose, and throat diseases, appearances on television by Dr. Ismayil Ismayilov' %}{% endblock %}
+{% block description %}
+    {% trans 'Here are videos related to ear, nose and throat diseases, TV appearances of Dr. Ismail Ismayilov' %}{% endblock description %}
+{% block keywords %}
+    {% trans 'Diseases of the ear, nose, and throat videos, video of Dr. Ismayil Ismayilovs television appearances' %}{% endblock keywords %}
+
+{% block content %}
+    <div class="container">
+        <div id="content" class="site-content">
+
+            <div id="primary" class="content-area column full">
+                <main id="main" class="site-main" role="main">
+                    <div class="grid bloggrid">
+
+                        {% for video in Category_Video %}
+                            <article style="height: 365px; overflow: hidden">
+
+                                <header class="entry-header">
+
+
+                                    <h1 class="entry-title" style="height: 95px; overflow: hidden">
+                                        <a href="{{ video.get_absolute_url }}"
+                                           rel="bookmark">{{ video.title|safe|truncatechars:85 }}
+                                        </a>
+                                    </h1>
+
+
+                                </header>
+
+                                <div class="uni-entry-top" style="height: 215px; overflow: hidden">
+                                    <div class="thumbnail-img">
+                                        {% video video.url 'tiny' %}
+                                    </div>
+                                </div>
+                                <div class="entry-meta">
+                                        <span class="posted-on"><time
+                                                class="entry-date published">
+                                            Published: {{ video.is_published|date:'Y' }} - {{ video.is_published|date:'d' }} - {{ video.is_published|date:'M' }}
+                                        </time>
+                                        </span>
+
+                                </div>
+
+
+                            </article>
+                        {% endfor %}
+
+                    </div>
+                    <div class="clearfix">
+                    </div>
+
+                    <div class="container">
+                        {% include 'includes/pagination.html' %}
+                    </div>
+                </main>
+                <!-- #main -->
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+

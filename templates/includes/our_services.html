@@ -1,0 +1,113 @@
+{% load static i18n %}
+{% load movie_tag %}
+{% load static %}
+<div class="uni-blog-list">
+    <div id="wrapper-container" class="site-wrapper-container">
+        <div id="main-content" class="site-main-content">
+            <section class="site-content-area">
+
+                <div class="uni-blog-list-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="uni-home-title">
+                                <h3 style="font-size: 22px">{% trans 'Our Services' %} </h3>
+                                <div class="uni-underline"></div>
+                            </div>
+
+                            <div class="uni-blog-list-left uni-home-our-services">
+
+                                {% for item in our_service_last %}
+                                    <div class="col-md-4">
+                                        <!--===========================================-->
+                                        <div class="blog-list-item" style="height: 200px">
+                                            <article class="post type-post">
+                                                <div class="content-inner">
+
+                                                    {#                                                    <div class="uni-entry-top">#}
+                                                    {#                                                        <div class="thumbnail-img">#}
+                                                    {#                                                            <a href="{{ item.get_absolute_url }}"#}
+                                                    {#                                                               title="{{ item.title|safe }}">#}
+                                                    {#                                                                <img src="{{ item.image.url }}" alt="{{ item.title|safe }}"#}
+                                                    {#                                                                     title="{{ item.title|safe }}"#}
+                                                    {#                                                                     class="img-responsive"#}
+                                                    {#                                                                     style="width: 100%; height: 300px">#}
+                                                    {#                                                            </a>#}
+                                                    {#                                                        </div>#}
+                                                    {#                                                    </div>#}
+
+
+                                                    <div class="uni-entry-body" style="height: 200px">
+
+
+                                                        {#                                                        <div class="uni-entry-time">#}
+                                                        {#                                                            <ul>#}
+                                                        {#                                                                <li class="year">{{ item.is_published|date:'Y' }}</li>#}
+                                                        {#                                                                <li class="day">{{ item.is_published|date:'d' }}</li>#}
+                                                        {#                                                                <li class="month">{{ item.is_published|date:'M' }}</li>#}
+                                                        {#                                                            </ul>#}
+                                                        {#                                                        </div>#}
+
+                                                        <div class="uni-entry-time">
+                                                            <div class="thumbnail-img">
+                                                                <a href="{{ item.get_absolute_url }}"
+                                                                   title="{{ item.title|safe }}">
+                                                                    <img src="{{ item.image.url }}"
+                                                                         alt="{{ item.title|safe }}"
+                                                                         title="{{ item.title|safe }}"
+                                                                         class="img-responsive"
+                                                                         style="width: 100%; height: 80px">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uni-entry-content">
+                                                                 <span class="uni-author">
+                                                            <a href="#" rel="author"><i class="fa fa-list-alt"
+                                                                                        aria-hidden="true"></i> {{ item.category.name }}</a>
+                                                         </span>
+                                                            &nbsp&nbsp
+
+                                                            <span class="uni-author">
+                                                            <a href="#" rel="author"><i class="fa fa-user"
+                                                                                        aria-hidden="true"></i> Dr. İsmayıl İ.</a>
+                                                        </span>
+                                                            <header class="uni-entry-header">
+                                                                <h2 class="uni-entry-title">
+                                                                    <a href="{{ item.get_absolute_url }}"
+                                                                       rel="">{{ item.title|safe|truncatechars:40 }}</a>
+                                                                </h2>
+                                                            </header>
+
+                                                            <div class="uni-entry-meta">
+
+
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+
+
+
+                                <div class="btn-all-services">
+                                    {% get_categories_ourservices as  category_ourservices %}
+                                    {% for item in category_ourservices %}
+                                        <a href="{{ item.get_absolute_url }}">{{ item.name }}</a>
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+    </div>
+</div>

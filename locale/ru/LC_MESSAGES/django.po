@@ -1,0 +1,476 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: .\templates\includes\banner.html:24 .\templates\includes\banner.html:107
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-04 22:51+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\templates\about_doctor\about_doctor_category_NONE.html:71
+msgid "More details"
+msgstr "Подробнее"
+
+#: .\templates\about_doctor\about_doctor_category_NONE.html:102
+#: .\templates\about_doctor\about_doctor_detail.html:152
+#: .\templates\about_doctor\about_doctor_of_category.html:138
+#: .\templates\image_temp\image_category.html:134
+#: .\templates\ourservices\our_services_detail.html:180
+#: .\templates\post\post_detail.html:163
+#: .\templates\video\video_of_category.html:133
+msgid "categories"
+msgstr "категории"
+
+#: .\templates\about_doctor\about_doctor_category_NONE.html:130
+#: .\templates\about_doctor\about_doctor_detail.html:174
+#: .\templates\about_doctor\about_doctor_of_category.html:166
+#: .\templates\image_temp\image_category.html:154
+#: .\templates\ourservices\our_services_detail.html:202
+#: .\templates\post\post_detail.html:186
+#: .\templates\video\video_of_category.html:153
+msgid "Latest posts"
+msgstr "Последние посты"
+
+#: .\templates\about_doctor\about_doctor_category_NONE.html:162
+#: .\templates\about_doctor\about_doctor_of_category.html:198
+msgid "tags cloud"
+msgstr "облако тегов"
+
+#: .\templates\about_doctor\about_doctor_detail.html:5
+#: .\templates\ourservices\our_services_category.html:5
+msgid "Our services to patients"
+msgstr "Наши услуги"
+
+#: .\templates\about_doctor\about_doctor_detail.html:7
+#: .\templates\ourservices\our_services_category.html:7
+#: .\templates\ourservices\our_services_category.html:129
+msgid ""
+"Here you can get acquainted with the services we can provide you: nose "
+"operations, face operations, operations of the nasal pockets, ear "
+"operations, operations on the face, conservative treatment of diseases"
+msgstr ""
+"Здесь вы можете ознакомиться с услугами, которые мы можем вам оказать: "
+"операции на носу, операции на лице, операции на носовых пазухах, операции на "
+"ухе, операции на лице, консервативное лечение лор-заболеваний"
+
+#: .\templates\about_doctor\about_doctor_detail.html:9
+#: .\templates\ourservices\our_services_category.html:9
+msgid ""
+"nose operations, face operations, operations of the nasal pockets, ear "
+"operations, operations on the face, conservative treatment of diseases"
+msgstr ""
+"операции на носу, операции на лице, операции носовых карманов, операции на "
+"ушах, операции на лице, консервативное лечение заболеваний"
+
+#: .\templates\about_doctor\about_doctor_detail.html:33
+#: .\templates\base.html:109 .\templates\html\contact.html:31
+#: .\templates\image_temp\image.html:38
+#: .\templates\includes\breadcrump_image.html:16
+#: .\templates\includes\breadcrump_post.html:19
+#: .\templates\includes\breadcrump_post.html:20
+#: .\templates\includes\breadcrump_post_detail.html:16
+#: .\templates\includes\nav_mobile.html:12
+msgid "Home"
+msgstr "Домашняя страница"
+
+#: .\templates\about_doctor\about_doctor_detail.html:230
+#: .\templates\image_temp\image_category.html:209
+#: .\templates\ourservices\our_services_detail.html:258
+#: .\templates\post\post_detail.html:243
+#: .\templates\video\video_of_category.html:209
+msgid "Tags cloud"
+msgstr "Облако тегов"
+
+#: .\templates\about_doctor\about_doctor_of_category.html:5
+msgid "Doctor Ismayil Ismayilov - ent doctor"
+msgstr "Доктор Исмаил Исмаилов - лор врач"
+
+#: .\templates\about_doctor\about_doctor_of_category.html:7
+msgid "Otolaryngologist, treatment of  diseases of throat, nose and ear"
+msgstr "Отоларинголог, лечение заболеваний горла, носа и уха"
+
+#: .\templates\about_doctor\about_doctor_of_category.html:9
+msgid ""
+"Doctor Ismayil Ismayilov,ent doctor, Otolaryngologist, treatment of  "
+"diseases of throat, nose and ear"
+msgstr ""
+"Доктор Исмаил Исмаилов, лор врач, Отоларинголог, лечение заболеваний горла, "
+"носа и уха"
+
+#: .\templates\about_doctor\about_doctor_of_category.html:80
+#, fuzzy
+#| msgid "More details"
+msgid "More detail"
+msgstr "Подробнее"
+
+#: .\templates\base.html:15
+msgid "ENT doctor:"
+msgstr "Отоларинголог"
+
+#: .\templates\base.html:71
+msgid "Our goal"
+msgstr "Наша цель"
+
+#: .\templates\base.html:75
+msgid "Your health and beauty is our goal!"
+msgstr "Ваши здоровье и красота – наша цель!"
+
+#: .\templates\base.html:78
+msgid "Your health and beauty is our motivation!"
+msgstr "Ваши здоровье и красота – наша мотивация!"
+
+#: .\templates\base.html:104
+msgid "quick links"
+msgstr "Быстрый переход"
+
+#: .\templates\base.html:114
+msgid "SiteMap"
+msgstr "Карта сайта"
+
+#: .\templates\base.html:135 .\templates\html\contact.html:24
+#: .\templates\html\contact.html:32 .\templates\html\contact.html:52
+#: .\templates\includes\nav_mobile.html:67
+msgid "Our contacts"
+msgstr "Наши контакты"
+
+#: .\templates\base.html:140 .\templates\includes\nav_mobile.html:72
+msgid "FAQ"
+msgstr "Частые вопросы"
+
+#: .\templates\base.html:155 .\templates\includes\faq_and_latest_post.html:87
+msgid "latest posts"
+msgstr "Последние публикации"
+
+#: .\templates\base.html:175
+msgid "Social buttons"
+msgstr "Кнопки социальных сетей "
+
+#: .\templates\base.html:192
+msgid "Follow us"
+msgstr "Подписывайтесь на нас"
+
+#: .\templates\base.html:231
+msgid "ENT DISEASES"
+msgstr "ЛОР ЗАБОЛЕВАНИЯ"
+
+#: .\templates\base.html:233
+msgid "ENT SCIENCE"
+msgstr "ЛОР НАУКА"
+
+#: .\templates\html\404.html:30
+msgid "Page not found"
+msgstr "Страница не найдена"
+
+#: .\templates\html\404.html:31
+msgid ""
+"The page you are looking for might have been removed had its name changed or "
+"is temporarily unavailable."
+msgstr "Страница, которую вы ищете, могла быть удалена из-за изменения названия или временно недоступна."
+
+#: .\templates\html\404.html:32
+msgid "home page"
+msgstr "главная страница"
+
+#: .\templates\html\contact.html:71
+msgid "PATIENTS SERVICE"
+msgstr "Наши услуги "
+
+#: .\templates\html\contact.html:80
+msgid "Call Us"
+msgstr "Позвоните нам"
+
+#: .\templates\html\contact.html:89
+msgid "Send A Message"
+msgstr "Послать сообщение"
+
+#: .\templates\html\contact.html:105
+msgid "opening hours"
+msgstr "часы работы"
+
+#: .\templates\html\contact.html:110
+msgid "monday"
+msgstr "понедельник "
+
+#: .\templates\html\contact.html:114
+msgid "tuesday"
+msgstr "вторник"
+
+#: .\templates\html\contact.html:118
+msgid "wednesday"
+msgstr "среда"
+
+#: .\templates\html\contact.html:122
+msgid "thursday"
+msgstr "Четверг"
+
+#: .\templates\html\contact.html:126
+msgid "friday"
+msgstr "пятница "
+
+#: .\templates\image_temp\image_category.html:6
+msgid ""
+"Rhinoplasty - photo gallery, photos and videos from operations, "
+"blepharoplasty - gallery"
+msgstr ""
+"Ринопластика - фотогалерея, фото и видео с операций, блефаропластика - "
+"галерея"
+
+#: .\templates\image_temp\image_category.html:8
+#: .\templates\image_temp\image_category.html:95
+#: .\templates\image_temp\image_detail.html:543
+msgid ""
+"Photos and videos of Rhinoplasty are presented here, you can see photos and "
+"videos from operations, you can see the results of blepharoplasty"
+msgstr ""
+"Здесь представлены фото и видео ринопластики, можно посмотреть фото и видео "
+"с операций, можно посмотреть результаты блефаропластики"
+
+#: .\templates\image_temp\image_category.html:10
+msgid "Photo and video operations from rhinoplasty, blepharoplasty gallery"
+msgstr ""
+"Ринопластика - фотогалерея, фото и видео с операций, блефаропластика - "
+"галерея"
+
+#: .\templates\image_temp\image_category.html:89
+msgid "No Images Uploaded for this category"
+msgstr "Нет загруженных изображений для этой категории"
+
+#: .\templates\includes\faq-for-faq-html.html:10
+#: .\templates\includes\faq_and_latest_post.html:10
+msgid "Faq"
+msgstr "Частые вопросы"
+
+#: .\templates\includes\faq-for-faq-html.html:38
+#: .\templates\includes\faq_and_latest_post.html:37
+msgid "What can I get as a result of an ENT examination?"
+msgstr "Что я могу получить в результате ЛОР-обследования?"
+
+#: .\templates\includes\faq-for-faq-html.html:40
+#: .\templates\includes\faq_and_latest_post.html:39
+msgid ""
+"Obviously, a diagnosis cannot be made without an examination. The "
+"otorhinolaryngologist will use sophisticated equipment to better understand "
+"the objective state of your body. For example, he will use an otoscope or "
+"endoscope to see the eardrum. He may use a nasal speculum or endoscope to "
+"see more clearly inside your nasal passages. Or, an otolaryngologist may use "
+"a flexible, fiberoptic nasoendoscope to get a better look at the back of "
+"your nose or voice"
+msgstr ""
+"Понятно, что без осмотра диагноз поставить нельзя. Оториноларинголог будет "
+"использовать сложное оборудование, чтобы лучше понять объективное состояние "
+"вашего организма. Например, он будет использовать отоскоп или эндоскоп, "
+"чтобы увидеть барабанную перепонку. Он может использовать назальное зеркало "
+"или эндоскоп, чтобы лучше видеть ваши носовые ходы. Или отоларинголог может "
+"использовать гибкий оптоволоконный назоэндоскоп, чтобы лучше рассмотреть "
+"заднюю часть носа или гортань."
+
+#: .\templates\includes\nav.html:35
+msgid "Information"
+msgstr "Информация"
+
+#: .\templates\includes\nav.html:47 .\templates\includes\nav_mobile.html:36
+msgid "Video"
+msgstr "Видео"
+
+#: .\templates\includes\nav.html:57 .\templates\includes\nav_mobile.html:46
+msgid "Gallery"
+msgstr "Галерея"
+
+#: .\templates\includes\nav.html:71 .\templates\includes\nav_mobile.html:59
+msgid "About us"
+msgstr "О нас"
+
+#: .\templates\includes\nav_mobile.html:13
+#: .\templates\includes\our_services.html:13
+msgid "Our Services"
+msgstr "Наши услуги"
+
+#: .\templates\includes\nav_mobile.html:24
+#, fuzzy
+#| msgid "ENT Articles"
+msgid "Articles"
+msgstr "ЛОР статьи"
+
+#: .\templates\includes\posts_on_index.html:16
+#: .\templates\ourservices\our_services_category.html:28
+#: .\templates\post\post_of_category.html:26
+msgid "ENT Articles"
+msgstr "ЛОР статьи"
+
+#: .\templates\post\index.html:5
+msgid "ENT doctor, otorhinolaryngologist Dr. Ismayil Ismayilov"
+msgstr "ЛОР-врач, оториноларинголог Доктор Исмаил Исмаилов"
+
+#: .\templates\post\index.html:7
+msgid ""
+"Website of ENT doctor, otorhinolaryngologist Dr. Ismayil Ismayilov. "
+"Information about ear, nose and throat diseases."
+msgstr ""
+"Сайт ЛОР-врача, оториноларинголога Исмаила Исмаилова. Информация о "
+"заболеваниях уха, горла и носа."
+
+#: .\templates\post\index.html:9
+msgid ""
+"ENT doctor otorhinolaryngologist Dr. Ismayil Ismayilov ear, nose and throat "
+"diseases"
+msgstr ""
+"ЛОР врач оториноларинголог Доктор Исмаил Исмаилов болезни уха, горла и носа"
+
+#: .\templates\post\index.html:57
+msgid "Website of ENT doctor, otorhinolaryngologist Dr. Ismayil Ismayilov."
+msgstr "Сайт ЛОР-врача, оториноларинголога Исмаила Исмаилова."
+
+#: .\templates\post\index.html:58
+msgid "Information about ear, nose and throat diseases."
+msgstr "Информация о заболеваниях уха, горла и носа."
+
+#: .\templates\post\post_of_category.html:6
+msgid ""
+"ent diseases and scientific, treatment of ear, nose and throat problems by "
+"surgical or conservative methods"
+msgstr ""
+"заболевания  лечение заболеваний уха, горла и носа хирургическими или "
+"консервативными методами"
+
+#: .\templates\post\post_of_category.html:8
+#: .\templates\post\post_of_category.html:111
+msgid ""
+"On our site, you can get a lot of information about larynx diseases, "
+"surgical or conservative treatment of ent diseases"
+msgstr ""
+"На нашем сайте вы можете получить много информации о заболеваниях уха, горла "
+"и носа, оперативном или консервативном лечении заболеваний уха, горла и носа."
+
+#: .\templates\post\post_of_category.html:10
+msgid "ent diseases, surgical or conservative treatment of ent diseases"
+msgstr ""
+"лор-заболевания, хирургическое или консервативное лечение лор-заболеваний"
+
+#: .\templates\video\video_of_category.html:8
+msgid ""
+"Videos related to ear, nose, and throat diseases, appearances on television "
+"by Dr. Ismayil Ismayilov"
+msgstr "Видеоролики о заболеваниях уха, горла и носа, выступления на телевидении доктора Исмаила Исмаилова"
+
+#: .\templates\video\video_of_category.html:9
+#: .\templates\video\video_of_category.html:89
+msgid ""
+"Here are videos related to ear, nose and throat diseases, TV appearances of "
+"Dr. Ismail Ismayilov"
+msgstr "Здесь представлены видеоролики о заболеваниях уха, горла и носа, выступления доктора Исмаила Исмаилова на телевидении."
+
+#: .\templates\video\video_of_category.html:11
+msgid ""
+"Diseases of the ear, nose, and throat videos, video of Dr. Ismayil "
+"Ismayilovs television appearances"
+msgstr "Видеозаписи болезней уха, горла и носа, видео выступлений доктора Исмаила Исмаилова на телевидении"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:5
+msgid "Select an image to embed"
+msgstr "Выберите изображение для вставки"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+"Найдите нужное изображение и нажмите «Вставить изображение», чтобы "
+"продолжить..."
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+"Изображения не найдены. Загружайте изображения с помощью диалогового окна "
+"«Кнопка изображения» «Загрузить."
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:50
+msgid "Images in: "
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:62
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:80
+msgid "Embed Image"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:146
+msgid "Play Slideshow"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:147
+msgid "Pause Slideshow"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:150
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:151
+msgid "&lsaquo; Prev"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:207
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:222
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:231
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:240
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
+msgid "Connect, get help, or contribute"
+msgstr ""
